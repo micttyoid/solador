@@ -13,13 +13,15 @@ mod layers;
 mod loader;
 mod map;
 mod objects;
+/// Parses tiled files (xml)
 pub mod parse;
 mod properties;
 mod reader;
 mod template;
 mod tile;
 mod tileset;
-mod util;
+/// mostly macros and a few methods
+pub mod util;
 #[cfg(feature = "world")]
 mod world;
 

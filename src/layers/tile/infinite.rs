@@ -170,6 +170,7 @@ impl<'map> Chunk<'map> {
     }
 }
 
+/// Internal struct used in [`InfiniteTileLayerData`]
 #[derive(Debug, PartialEq, Clone)]
 pub struct InternalChunk {
     /// The X coordinate of the top-left-most tile in the chunk.

@@ -4,6 +4,7 @@ use xml::{reader::XmlEvent, EventReader};
 
 use crate::{Error, Map, ResourceCache, ResourceReader, Result};
 
+/// Parses a map file (tmx)
 pub fn parse_map(
     path: &Path,
     reader: &mut impl ResourceReader,

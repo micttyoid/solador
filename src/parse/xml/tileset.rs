@@ -4,6 +4,7 @@ use xml::{reader::XmlEvent, EventReader};
 
 use crate::{Error, ResourceCache, ResourceReader, Result, Tileset};
 
+/// Parses a tileset file (tsx)
 pub fn parse_tileset(
     path: &Path,
     reader: &mut impl ResourceReader,

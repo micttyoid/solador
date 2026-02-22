@@ -101,13 +101,13 @@ pub struct TilesetProperties {
 impl Tileset {
     /// Gets the tile with the specified ID from the tileset.
     #[inline]
-    pub fn get_tile(&self, id: TileId) -> Option<Tile> {
+    pub fn get_tile(&self, id: TileId) -> Option<Tile<'_>> {
         self.tiles.get(&id).map(|data| Tile::new(self, data))
     }
 
     /// Iterates through the tiles from this tileset.
     #[inline]
-    pub fn tiles(&self) -> impl ExactSizeIterator<Item = (TileId, Tile)> {
+    pub fn tiles(&self) -> impl ExactSizeIterator<Item = (TileId, Tile<'_>)> {
         self.tiles
             .iter()
             .map(move |(id, data)| (*id, Tile::new(self, data)))
