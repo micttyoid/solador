@@ -1,6 +1,9 @@
-# rs-tiled
+# Solador: one of those forks of rs-tiled
+
+![Tiler](./assets/images/tiler.png)
+
 ```toml
-tiled = "0.15.0"
+tiled = { git = "https://github.com/micttyoid/solador", branch = "main" }
 ```
 
 [![Rust](https://github.com/mapeditor/rs-tiled/actions/workflows/rust.yml/badge.svg)](https://github.com/mapeditor/rs-tiled/actions/workflows/rust.yml)
