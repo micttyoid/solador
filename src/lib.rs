@@ -13,7 +13,7 @@ mod layers;
 mod loader;
 mod map;
 mod objects;
-mod parse;
+pub mod parse;
 mod properties;
 mod reader;
 mod template;
@@ -36,5 +36,6 @@ pub use reader::*;
 pub use template::*;
 pub use tile::*;
 pub use tileset::*;
+pub use xml;
 #[cfg(feature = "world")]
 pub use world::*;

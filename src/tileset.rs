@@ -84,7 +84,8 @@ pub(crate) struct EmbeddedParseResult {
 }
 
 /// Internal structure for holding mid-parse information.
-struct TilesetProperties {
+#[derive(Debug)]
+pub struct TilesetProperties {
     spacing: Option<u32>,
     margin: Option<u32>,
     tilecount: u32,

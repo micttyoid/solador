@@ -171,7 +171,7 @@ impl<'map> Chunk<'map> {
 }
 
 #[derive(Debug, PartialEq, Clone)]
-struct InternalChunk {
+pub struct InternalChunk {
     /// The X coordinate of the top-left-most tile in the chunk.
     /// Corresponds to the `x` attribute in the TMX format.
     x: i32,
