@@ -1,6 +1,6 @@
 # Solador: one of those forks of rs-tiled
 
-![Tiler](./assets/images/tiler.png)
+<img src="./assets/images/tiler.png" alt="A tiler laying a tile" width="32%" align="right">
 
 ```toml
 tiled = { git = "https://github.com/micttyoid/solador", branch = "main" }
